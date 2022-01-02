@@ -14,7 +14,7 @@ public class Calculator {  // Calculator Programme
                 int b = sc.nextInt();
                 if (op == '+'){
                     ans = a+b;
-                }
+              }
                 if (op == '-'){
                     ans = a-b;
                 }
@@ -41,13 +41,3 @@ public class Calculator {  // Calculator Programme
         sc.close();
     }
 }
-/*Hello Shuvadeep 😃, 
-Hope you & your family are fine, BTW Shubham Bansal this side.
-I'm just looking for strong teammates for the hackathon & Honestly while I was scrolling, your Profile shined like a Diamond in my eyes. 
-So, would you like to collaborate with me so that we can contribute as much as possible and win the Hackathon.
-
-You can connect with me at - 
-Twitter - https://twitter.com/ImBansalShubham
-Linkedin - https://www.linkedin.com/in/sensationalshubham/
-
-    */

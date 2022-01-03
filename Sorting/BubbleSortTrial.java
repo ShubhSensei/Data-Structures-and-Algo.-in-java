@@ -12,7 +12,7 @@ public class BubbleSortTrial {
                 }
             }
         }
-        
+         
         System.out.println(Arrays.toString(arr));
     }
 }

@@ -6,8 +6,8 @@ public class E_17 {
         int target = 9;
         int ans = binarysearh(nums, target);
         System.out.println(ans);
-
     }
+    
     static int binarysearh(int[] nums, int target){
         int start = 0;
         int end = nums.length-1;

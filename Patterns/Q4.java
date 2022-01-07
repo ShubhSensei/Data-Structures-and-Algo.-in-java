@@ -2,7 +2,7 @@ package Assignments.Patterns;
 
 public class Q4 {
     public static void main(String[] args) {
-        /*
+/*
     1
     1 2
     1 2 3

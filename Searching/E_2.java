@@ -1,34 +1,31 @@
-// package Assignments.Searching;
-// // https://leetcode.com/problems/num-number-higher-or-lower/
+package Assignments.Searching;
+// https://leetcode.com/problems/num-number-higher-or-lower/
 // import java.util.*;
-// public class E_2 {
-//     public static void main(String[] args) {
-//         Scanner in = new Scanner(System.in);
-//         int n = in.nextInt(); // Total numbers
-//         int[] arr = new int[n];
-//         System.out.println("Now pick from 1 to"+ n);
-//         int pick = in.nextInt(); // now pick a  number
-
-//         int start = 0;
-//         int end = n-1;
-//         // int min = 1;
-//         // int max = n;
-//         for (int i = 0; i < arr.length; i++) {
-//             if(guess(10, 7, 1, 10)==true){
-
-//             }
-//         }
-        
-//         in.close();
-//     }
-//     static int guess(int n, int pick, int min, int max){
-//         int num = (int)Math.floor(Math.random()*(max-min+1)+min);
-//         if(num == pick){
-//             return 0;
-//         } else if( pick< num){
-//             return -1;
-//         } else {
-//             return 1;
-//         }
-//     }
-// }
+public class E_2 {
+    public static void main(String[] args) {  // The Q. has an inbuild API so it can only be solved on LeetCode
+        /** 
+ * Forward declaration of guess API.
+ * @param  num   your guess
+ * @return 	     -1 if num is lower than the guess number
+ *			      1 if num is higher than the guess number
+ *               otherwise return 0
+ * int guess(int num);
+ */
+       guess(8);
+    }
+    static int guess(int n){
+        int start = 0;
+        int end = n;
+        while(start<=end){
+            int mid = start +(end-start)/2;
+            if(guess(mid) == -1){
+                end = mid-1;
+            } else if(guess(mid)==1){
+                start = mid+1;
+            } else{
+                return mid;
+            }
+        }
+        return 0;
+    }
+}

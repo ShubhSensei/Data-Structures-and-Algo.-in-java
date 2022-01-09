@@ -1,27 +1,25 @@
 // package Assignments.Searching;
-// import java.util.*;
 
 // public class E_3 {
 //     public static void main(String[] args) {
-//         Scanner in = new Scanner(System.in);
-//         int n = in.nextInt();
-//         int ver = 1;
-//         int[] versions = new int[n];
-//         for (int i = 0; i < versions.length; i++) {
-//             versions[i] = ver;
-//             ver++;
-//         }
-//         int bad = 4;
-//         for (int index = 0; index < versions.length; index++) {
-//             if(versions[index]==bad){
-//                 System.out.println(bad);
-//             } else{
-//                 System.out.println("No Bad Version found");
-//             }
-//         }
+//         // // The Q. has an inbuild API so it can only be solved on LeetCode
 
 //     }
-//     static int isBadVersion(int[] versions, int bad){
-       
+//     static boolean isBadVersion(){
+//         /* The isBadVersion API is defined in the parent class VersionControl.
+//       boolean isBadVersion(int version); */
+//     }
+//     static int firstBadVersion(int n) {
+//         int start = 1;
+//         int end = n;
+//         while(start<=end){
+//             int mid = start+(end-start)/2;
+//             if(isBadVersion(mid)=="false"){
+//                 start = mid+1;
+//             } else{
+//                 end = mid-1;
+//             }
+//         }
+//         return 0;
 //     }
 // }

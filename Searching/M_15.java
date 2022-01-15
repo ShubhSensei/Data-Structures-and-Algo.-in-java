@@ -1,5 +1,5 @@
 package Assignments.Searching;
-import java.util.*;
+// import java.util.*;
 // https://leetcode.com/problems/find-the-duplicate-number/
 public class M_15 {
     public static void main(String[] args) {    // Runtime Error aa raha h LeetCode p

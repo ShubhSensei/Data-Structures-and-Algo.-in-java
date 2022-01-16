@@ -8,6 +8,7 @@ public class E_2 {
         
         System.out.println(majority);
     }
+
     static int majorityElement(int[] nums) {
         if(nums.length == 1){
             return nums[0];
@@ -22,19 +23,36 @@ public class E_2 {
             }
         }
         int n = nums.length;
-        int count = 1;
-        for (int i = 0; i < nums.length-1; i++) {
-            if(nums[i] == nums[i+1]){
-                count++;
-            } else{
-                i++;
-            }
-            if (count > n/2) {
-                return nums[i];
-            } else {
-                count = 1;
-            }
-        }
-        return 0;
-    }
+        // int count = 1;
+        // for (int i = 0; i < nums.length-1; i++) {
+        //     if(nums[i] == nums[i+1]){
+        //         count++;
+        //      }// else{
+        //     //     i++;
+        //     // }
+        //     if (count > n/2) {
+        //         return nums[i];
+        //     } //else {
+        //     //     count = 1;
+        //     // }
+        // }
+        // return -1;
+
+                                                        // can also do this
+            return nums[n/2];
+     }
+
+     static int BruteForce(int[] nums){
+        int n=nums.length;
+   
+        for(int i=0;i<nums.length;i++){
+           int value=nums[i];
+           int count=0;
+        for(int j=0;j<nums.length;j++){
+           if(nums[j]==value) count++;
+       }
+          if(count>n/2) return value;
+          }
+         return -1; 
+     }
 }

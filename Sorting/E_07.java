@@ -3,7 +3,7 @@ import java.util.*;
 // https://leetcode.com/problems/third-maximum-number/
 public class E_07 {
     public static void main(String[] args) {
-        int[] nums = {2,2,3,1};
+        int[] nums = {5, 2, 2}; // Test cases {1, 1, 2}, {5, 2, 2}
         int ans = thirdMax(nums);
         System.out.println(Arrays.toString(nums));
         System.out.println(ans);
@@ -18,9 +18,24 @@ public class E_07 {
                 }
             }
         }
-        if(nums.length <=2){
+        if(nums.length <=2 ){
             return nums[nums.length-1];
         }
-        return nums[nums.length-3];
+        int previous = Integer.MAX_VALUE;
+        int count = 0;
+        for (int end = nums.length-1; end >= 0; end--){
+            if(nums[end]!=previous){
+                previous = nums[end];
+                count++;
+            }
+
+            if(count ==3){
+                return previous;
+            }
+        }  
+        if(count >0){
+            return nums[nums.length-1];
+        }
+        return previous;
     }
 }

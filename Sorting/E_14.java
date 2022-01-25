@@ -12,13 +12,7 @@ public class E_14 {
             nums[i] = nums[i] * nums[i];
         }
         for (int i = 0; i < nums.length; i++) {
-            // nums[i] = nums[i] * nums[i];
             for (int j = 0; j < nums.length-1; j++) {
-                
-                // if(nums[i] <0){
-                //     nums[i] = nums[i]*-1;
-                // }
-               
                 if(nums[j] > nums[j+1]){
                     int temp = nums[j];
                     nums[j] = nums[j+1];

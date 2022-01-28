@@ -1,5 +1,4 @@
 package Assignments.Sorting;
-import java.util.*;
 // https://leetcode.com/problems/height-checker/
 public class E_15 {
     public static void main(String[] args) {
@@ -8,8 +7,8 @@ public class E_15 {
         System.out.println(ans);
     }
     static int heightChecker(int[] heights) {
-        int[] expected = heights;
-        for (int i = 0; i < expected.length; i++) {
+        int[] expected = heights.clone();
+        for (int i = 0; i < heights.length; i++) {
             for (int j = 0; j <expected.length-1-i; j++) {
                 if(expected[j] > expected[j+1]){
                     int temp = expected[j];
@@ -20,11 +19,10 @@ public class E_15 {
         }
         int count = 0;
         for (int i = 0; i < expected.length; i++) {
-            if(heights[i] == expected[i]){
+            if(heights[i] != expected[i]){
                 count = count +1;
             }
         }
-        return count;
-        // return expected;
+        return count;  
     }
 }

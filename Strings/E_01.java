@@ -17,6 +17,6 @@ public class E_01 {
         System.out.print(a);        
     }
 }
-                        /*In Function, STring builder can be returned by using the method "Var_name.toString();"
+                        /*In Function, STring builder can be returned by using the method "return Var_name.toString();"
                      Eg.-  In this case 
                             a.toString(); */

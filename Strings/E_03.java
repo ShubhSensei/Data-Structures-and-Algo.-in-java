@@ -1,3 +1,5 @@
+package Assignments.Strings;
+// https://leetcode.com/problems/goal-parser-interpretation/
 public class E_03 {
     public static void main(String[] args) {
         String command = "G()(al)";

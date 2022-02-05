@@ -1,3 +1,5 @@
+package Assignments.Strings;
+// https://leetcode.com/problems/shuffle-string/
 // import java.util.*;
 public class E_02 {
     public static void main(String[] args) {

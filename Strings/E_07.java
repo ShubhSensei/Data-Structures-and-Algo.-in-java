@@ -1,5 +1,5 @@
 package Assignments.Strings;
-
+// https://leetcode.com/problems/to-lower-case/
 public class E_07 {
     public static void main(String[] args) {
         String s = "HELLO";

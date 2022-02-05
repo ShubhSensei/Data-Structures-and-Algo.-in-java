@@ -1,4 +1,5 @@
 package Assignments.Strings;
+// https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/
 public class E_6 {
     public static void main(String[] args) {
         String[] word1 = {"ab", "c"};

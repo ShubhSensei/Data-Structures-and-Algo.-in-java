@@ -1,4 +1,4 @@
-// package Assignments.Strings;
+ package Assignments.Strings;
 // https://leetcode.com/problems/defanging-an-ip-address/
 public class E_01 {
     public static void main(String[] args) {

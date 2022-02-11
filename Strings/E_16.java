@@ -1,4 +1,4 @@
-package Assignments;
+package Assignments.Strings;
 // https://leetcode.com/problems/valid-palindrome/
 public class E_16 {
     public static void main(String[] args) {

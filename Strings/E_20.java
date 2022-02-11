@@ -1,4 +1,4 @@
-package Assignments;
+package Assignments.Strings;
 // https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/
 public class E_20 {
     public static void main(String[] args) {

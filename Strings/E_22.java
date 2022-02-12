@@ -25,7 +25,6 @@ public class E_22 {
                 for (int j = i+1; j < reverse.length(); j++) {
                     ans.append(reverse. charAt(j));
                 }
-                
             }
         } 
         System.out.println(ans);

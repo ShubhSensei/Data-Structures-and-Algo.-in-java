@@ -13,7 +13,7 @@ public class E_17 {
         if(s.length()%2!=0){
             palindrome(start, end);
         } else{
-            int mid = s.length()/2;
+            // int mid = s.length()/2;
             // List&lt;Integer&gt;arrayList = IntStream.of(myArray) .boxed().collect(Collectors.toList());
             return true;
         }

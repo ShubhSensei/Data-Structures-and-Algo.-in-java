@@ -3,7 +3,7 @@ package Assignments.Strings;
 public class E_23 {
     public static void main(String[] args) {
         String s = "XIV";
-        int count = 0;  
+        // int count = 0;  
 
         for (int i = 0; i < s.length()-1; i++) {
             int start = s.charAt(i);  int end = s.charAt(i+1);

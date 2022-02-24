@@ -1,11 +1,7 @@
 package Assignments.Arrays;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-
+import java.util.*;
 public class H_01 {
-    public static void main(String[] args) {
+    public static void main(String[] args) {    // Time limit exceeded
         int[][] points = {
             // {1, 3},
             // {2, 0},
